@@ -1,0 +1,91 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 97%;
+            height: 346px;
+               background:linear-gradient(#FE9A2E ,white);
+        }
+        .auto-style2 {
+            text-align: center;
+            background:#8181F7;      }
+        .auto-style4 {
+            background:linear-gradient(#D0A9F5 ,white);
+            height: 237px;
+        }
+        .auto-style5 {
+            text-align: left;
+            background: linear-gradient(#8181F7 ,white) ;
+            height: 40px;
+           font-size:50px;
+
+        }
+        .auto-style5 img{
+            width:90px;
+            height:90px;
+          
+             padding-right:300px;
+        }
+        .auto-style6 {
+            width: 198px;
+        }
+        #con{
+            padding:20px;
+        }
+    
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    </div id="con">
+        <table class="auto-style1">
+            <tr>
+                
+                <td class="auto-style5" colspan="2"><img src="images/iit patna.jpg" />Welcome to IIT Patna</td>
+            </tr>
+            
+            <tr>
+                
+                <td class="auto-style6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/attendence.aspx">Attendance</asp:HyperLink>
+                    <br />
+                    <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/leave.aspx">Leave</asp:HyperLink>
+                    <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/grading.aspx">Grading</asp:HyperLink>
+                    <br />
+                    <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/courses.aspx">Courses</asp:HyperLink>
+                    <br />
+                    <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/Home.aspx">LOGOUT</asp:HyperLink>
+                </td>
+                <td class="auto-style4">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+            <p>
+                &nbsp;</p>
+        
+        </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            </table>
+    </form>
+</body>
+</html>

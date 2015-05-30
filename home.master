@@ -1,0 +1,93 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="home.master.cs" Inherits="home" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+    
+        }
+        .auto-style2 {
+            height: 120px;
+            text-align: center;
+              background: linear-gradient(#8181F7 ,white) ;
+
+        }
+        .auto-style3 {
+            font-size: 50px;
+            text-align:left;
+        }
+        #logo{
+            width:90px;
+            height:90px;
+            align:left;
+            float: left;
+        }
+        .auto-style4 {
+            height: 23px;
+        }
+        #lp{
+                    background:linear-gradient(#FE9A2E,white);
+        }
+        .auto-style5 {
+            width: 209px;
+        }
+        #rp{
+              background: linear-gradient(#D0A9F5 ,white) ;
+              padding-left:30px;
+        }
+        .auto-style6 {
+            width: 794px;
+        }
+        #mn{
+            height:300px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div style="text-align: left">
+    </div>
+    <table class="auto-style1">
+        <tr>
+             
+            <td class="auto-style2" colspan="3">
+               <img id="logo" src="images/iit%20patna.jpg" />
+                <strong><span class="auto-style3">Welcome to IIT Patna</span></strong></td>
+        </tr>
+        <tr id="mn">
+            <td id="lp" class="auto-style5" >
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/acccal.aspx">List Of Holidays</asp:HyperLink>
+                &nbsp;<br />
+                <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:HyperLink ID="HyperLink2" runat="server">Academic Calander</asp:HyperLink>
+                <br />
+                <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </td>
+            <td class="auto-style6">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+            </td>
+            <td id="rp">
+                <asp:HyperLink ID="HyperLink3" runat="server">Student Login</asp:HyperLink>
+                <br />
+                <br />
+                <asp:HyperLink ID="HyperLink4" runat="server">Employee Login</asp:HyperLink>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3" class="auto-style4"></td>
+        </tr>
+    </table>
+    </form>
+    </body>
+</html>
